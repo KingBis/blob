@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css';
-
-const pageTitle = "About Me";
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+const pageTitle = "About Mee";
 ---
 
 <html lang="en">
@@ -13,13 +14,14 @@ const pageTitle = "About Me";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
+		<Header />
 
 		<h1>{pageTitle}</h1>
 
 		"Experts, Information, Reviews, and Coordination: Evidence on How Literary
 		Prizes Affect Sales", with Pierre-Guillaume Méon. Forthcoming at <bold>The Journal
 		of Industrial Economics.</bold>
+
+		<Footer />
 	</body>
 </html>
